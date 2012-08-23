@@ -1,0 +1,10 @@
+@(usernames: scala.collection.mutable.Queue[String])
+
+@main("Welcome to Play 2.0") {
+  <ul> 
+    @usernames.map{ username =>
+      <li>@username</li>
+    }
+  </ul>
+    
+}
